@@ -14,13 +14,16 @@
   <body>
     <header>
       <div class="logo">Preeti</div>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Project</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+  <div class="nav-links">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Project</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
       <a href="#contact" class="btn-outline">Connect With Me</a>
     </header>
 
@@ -145,6 +148,12 @@
 <footer class="footer">
   <p>&copy; 2025 Preeti. All Rights Reserved.</p>
 </footer>
+
+<script>
+  function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('active');
+  }
+</script>
 
   </body>
 </html>
